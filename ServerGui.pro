@@ -18,9 +18,9 @@ HEADERS += \
 FORMS += \
     MainWindow.ui
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../ResourcesServer/build/unknown-Debug/release/ -lResourcesServer
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../ResourcesServer/build/unknown-Debug/debug/ -lResourcesServer
-else:unix: LIBS += -L$$PWD/../ResourcesServer/build/unknown-Debug/ -lResourcesServer
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../ResourcesServer/build/unknown-Debug/release/release/ -lResourcesServer
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../ResourcesServer/build/unknown-Debug/release/debug/ -lResourcesServer
+else:unix: LIBS += -L$$PWD/../ResourcesServer/build/unknown-Debug/release/ -lResourcesServer
 
 INCLUDEPATH += $$PWD/../ResourcesServer
 DEPENDPATH += $$PWD/../ResourcesServer
